@@ -1,0 +1,56 @@
+:root {
+    box-sizing: border-box;
+    --head-foot-height:10%;
+    --main-height: 90%;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+}
+
+.container {
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: var(--head-foot-height);
+}
+
+main {
+  height: var(--main-height);
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+header,
+main,
+footer,
+ main,
+.breakfast,
+.lunch,
+.dinner,
+.desert,
+.smoothies,
+.snacks {
+    border: 1px solid green;
+}
+
+header,
+footer,
+.breakfast,
+.lunch,
+.dinner,
+.desert,
+.smoothies,
+.snacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
