@@ -1,8 +1,5 @@
 :root {
     box-sizing: border-box;
-    --head-foot-height:10%;
-    --main-height: 80%;
-    --main-width: 100%;
 }
 
 body {
@@ -11,13 +8,30 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav,
+.right-nav {
+    padding: 1rem;
+}
+
+.icon,
+.name {
+    text-decoration-line: none;
+}
  
 main {
     height: 80vh;
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     padding: 1rem;
     gap: 1rem;
 }
@@ -27,16 +41,69 @@ footer {
     height: 10vh;
 }
 
-header,
-footer,
-.breakfast,
-.lunch,
-.dinner,
-.desert,
-.smoothies,
-.snacks {
-    border: 1px solid green;
+ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid lightblue;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightblue;
+    text-decoration-line: none;
+    color: black;
+}
+
+.breakfast-img {
+    background-image: url(./images/tanaphong-toochinda-FlY6QZzvXM0-unsplash.jpg);
+
+}
+
+.lunch-img {
+    background-image: url(./images/the-nix-company-0bam1doSkPM-unsplash.jpg);
+}
+
+
+.breakfast-img,
+.lunch-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85%;
+}
+
+.card-content {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mobile view */
+@media (max-width: 700px) {
+    body {
+        height: 100%;
+    }
+
+    .name {
+        display: none;
+    }
+
+    header,
+    footer {
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        height: 13rem;
+
+    }
 }
