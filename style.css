@@ -91,9 +91,28 @@ header {
     background-image: url(./images/landing_page/the-nix-company-0bam1doSkPM-unsplash.jpg);
 }
 
+.dinner-img {
+    background-image: url(./images/landing_page/parnis-azimi-dIbPZcftpL8-unsplash.jpg);
+}
+
+.dessert-img {
+    background-image: url(./images/landing_page/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg);
+}
+
+.smoothies-img {
+    background-image: url(./images/landing_page/brenda-godinez-CrK843Pl9a4-unsplash.jpg);
+}
+
+.snacks-img {
+    background-image: url(./images/landing_page/super-snapper-efJu9SKIjLA-unsplash.jpg);
+}
 
 .breakfast-img,
-.lunch-img {
+.lunch-img,
+.dinner-img,
+.dessert-img,
+.snacks-img,
+.smoothies-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
