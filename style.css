@@ -32,9 +32,6 @@ nav {
 .left-nav > a {
     height: 100%;
     width: 100%;
-}
-
-.left-nav > a {
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -120,10 +117,19 @@ header {
         height: auto;
     }
 
-    /* reduce logo size */
-    .left-nav > a > img {
-        height: 90%;
-        width: 90%;
+    /* remove search bar */
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav {
+        width: 100%;
+    }
+
+    .left-nav > a {
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 
     .card {
