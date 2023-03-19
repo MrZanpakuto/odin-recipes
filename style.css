@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@700&family=Source+Sans+Pro&display=swap');
+
 :root{
     box-sizing: border-box;
     --font-color: #CA3433;
@@ -10,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
+    font-family: 'Source Sans Pro',Helvetica,sans-serif;
+    font-weight: 600;
 }
 
 nav {
@@ -73,6 +77,9 @@ header {
     border: 1px solid rgba(0,0,0,.15);
     text-decoration-line: none;
     color: black;
+    font-family: 'Sono',Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
 }
 
 .breakfast-img {
